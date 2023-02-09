@@ -3,15 +3,16 @@ body {
 }
 .container {
     display: flex;
-    align-items: center;
+    /*align-items: center; */
     gap: 30px;
     background-color: hsl(0, 0%, 100%);
-    max-width: 1000px; 
-    max-height: 1000px;
-    height: 400px;
-    width: 550px;
     margin: 150px auto;
     border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+}
+section {
+    padding: 24px;
 }
 img {
     width: 50%;
@@ -22,7 +23,8 @@ img {
 }
 .p1 {
     font-size: 14px;
-    font-weight: 300px;
+    font-weight: 300;
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .price {
@@ -35,20 +37,32 @@ img {
     color: green;
     font-size: x-large;
 }
-.cart1 {
-    background-color: hsl(158, 36%, 37%);
-    text-align: center;
-    height: 40px;
-    border-radius: 5px 5px 5px 5px;
-}
 .cart {
     border: none;
     background-color: hsl(158, 36%, 37%);
     font-weight: bold;
     font-size: 14px;
-    padding-top: 12px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
     color: hsl(0, 0%, 100%);
 }
 .p3 {
     text-decoration: line-through;
+} 
+
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        padding-bottom: 24px;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+        border-radius: 0;
+    }
+    section {
+        padding: 0 24px;
+    }
 }

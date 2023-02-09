@@ -20,20 +20,19 @@
   <body>
     <main>
       <div class="container">
-        <img src="image-product-desktop.jpg" />
+        <img
+          srcset="image-product-mobile.jpg 686w, image-product-desktop.jpg 600w"
+          sizes="(max-width: 375px) 100%,
+         600px"
+          src="image-product-desktop.jpg"
+        />
 
         <section>
           <p class="p1">P E R F U M E</p>
-          <h2>
-            Gabrielle <br />
-            Essence Eau <br />
-            De Parfum
-          </h2>
+          <h2>Gabrielle Essence Eau De Parfum</h2>
           <p class="p1">
-            A floral, solar and voluptous <br />
-            interpretation composed by <br />
-            Oliver Polge, perfume-curator <br />
-            for the HOUSE OF CHANEL
+            A floral, solar and voluptous interpretation composed by Oliver
+            Polge, perfume-curator for the HOUSE OF CHANEL
           </p>
 
           <div class="price">
@@ -41,12 +40,10 @@
             <p class="p3">$169.99</p>
           </div>
 
-          <div class="cart1">
-            <button class="cart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span>Add to cart</span>
-            </button>
-          </div>
+          <button class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Add to cart</span>
+          </button>
         </section>
       </div>
 
