@@ -24,7 +24,20 @@
   <body>
     <main>
       <div class="container">
-        <img src="image-product-desktop.jpg" />
+        <picture>
+          <source
+            srcset="image-product-mobile.jpg"
+            media="(max-width: 375px)"
+          />
+          <img src="image-product-desktop.jpg" />
+        </picture>
+        <!-- <img
+          srcset="image-product-mobile.jpg 686w, image-product-desktop.jpg 600w"
+          sizes="(max-width: 375px) 686px, 600px"
+          src="image-product-desktop.jpg"
+          alt="Nice glass bottle of perfume"
+        /> -->
+        <!-- <img src="image-product-desktop.jpg" /> -->
 
         <section>
           <p class="p1">P E R F U M E</p>
